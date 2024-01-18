@@ -70,7 +70,8 @@ export type HonoOptions<E extends Env> = {
    */
   router?: Router<[H, RouterRoute]>
   /**
-   * `getPath` option can handle the host header value.
+   * `getPath` can handle the host header value.
+   * @example
    * ```ts
    * const app = new Hono({
    *  getPath: (req) =>
